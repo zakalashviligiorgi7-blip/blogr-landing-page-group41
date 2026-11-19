@@ -172,3 +172,70 @@ li a:hover {
   background-color: #fff;
   transition: 0.3s;
 }
+
+main {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.design {
+  /* background-color: aquamarine; */
+  margin-top: 150px;
+  padding-left: 165px;
+}
+
+.design > h2 {
+  text-align: center;
+  color: #1f3e5a;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 93px;
+}
+
+.design > div {
+  /* background-color: yellow; */
+  padding: 20px;
+  display: flex;
+  height: 822px;
+}
+
+.content {
+  /* background-color: violet; */
+  width: 50%;
+}
+
+.content h3 {
+  color: #1f3e5a;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4c5862;
+  line-height: 28px;
+  max-width: 540px;
+}
+
+.content :nth-child(2) {
+  margin-bottom: 64px;
+}
+
+.cover {
+  /* background-color: tomato; */
+  padding: 20px;
+  width: 50%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.cover :first-child {
+  position: absolute;
+}
+
+.cover :last-child {
+  position: absolute;
+}
