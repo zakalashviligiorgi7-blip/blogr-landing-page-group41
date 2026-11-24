@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ html {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  font-family: Arial, sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
 header {
@@ -87,6 +89,10 @@ li a:hover {
   color: white;
 }
 
+.hamburger {
+  display: none;
+}
+
 .drop-down-box {
   position: relative;
 }
@@ -144,7 +150,7 @@ li a:hover {
 .hero div :first-child {
   padding: 15px 17px;
   border-radius: 28px;
-  background-color: #fff;
+  background-color: white;
   border: none;
   color: #ff505c;
   font-size: 16px;
@@ -169,18 +175,19 @@ li a:hover {
 
 .hero div :last-child:hover {
   color: #ff505c;
-  background-color: #fff;
+  background-color: white;
   transition: 0.3s;
 }
 
 main {
   max-width: 1440px;
   margin-inline: auto;
+  overflow-x: hidden;
 }
 
 .design {
-  /* background-color: aquamarine; */
   margin-top: 150px;
+  /* background-color: aquamarine; */
   padding-left: 165px;
 }
 
@@ -196,7 +203,7 @@ main {
   /* background-color: yellow; */
   padding: 20px;
   display: flex;
-  height: 822px;
+  align-items: center;
 }
 
 .content {
@@ -229,13 +236,186 @@ main {
   padding: 20px;
   width: 50%;
   position: relative;
-  overflow-x: hidden;
+  height: 882px;
 }
 
 .cover :first-child {
   position: absolute;
+  height: 100%;
 }
 
 .cover :last-child {
   position: absolute;
+  height: 100%;
+}
+
+.state {
+  height: 400px;
+  background-color: #393b59;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  margin-bottom: 116px;
+  margin-top: 57px;
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position-y: -500px;
+  background-position-x: -200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 165px;
+  position: relative;
+}
+
+.state img {
+  position: absolute;
+  z-index: 1;
+  left: 150px;
+  bottom: -110px;
+}
+
+.state div {
+  color: white;
+  max-width: 540px;
+}
+
+.state div h2 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  margin-bottom: 5px;
+}
+
+.state div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+.free-open {
+  height: 880px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 165px;
+  align-items: center;
+  /* background-color: #ff3e55; */
+  position: relative;
+}
+
+.laptop {
+  position: absolute;
+  z-index: 1;
+  height: 786px;
+  left: -210px;
+}
+
+.free-open div {
+  max-width: 540px;
+}
+
+.free-open h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #1f3e5a;
+  margin-bottom: 16px;
+}
+
+.free-open p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #4c5862;
+}
+
+.free-open :nth-child(2) {
+  margin-bottom: 64px;
+}
+
+footer {
+  min-height: 359px;
+  background-color: #24242c;
+  border-top-right-radius: 100px;
+  padding: 70px 165px;
+  color: #c8c8ca;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer ul :first-child {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 11px;
+  font-family: "ubuntu";
+}
+
+@media (max-width: 700px) {
+  header {
+    width: 375px;
+    padding: 56px 24px 156px;
+  }
+
+  nav {
+    margin-bottom: 108px;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 600;
+    width: 300px;
+    margin-inline: auto;
+  }
+
+  .design {
+    padding: 100px 24px;
+  }
+
+  .design div {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .cover {
+    width: 100%;
+  }
+
+  /* .cover img {
+    width: 100%;
+    
+  } */
+
+  .cover :first-child {
+    width: 326px;
+  }
+
+  .cover :last-child {
+    width: 326px;
+  }
 }
